@@ -34,17 +34,20 @@
     <header>
 
         <div>
-            株式会社<br>中小企業経営支援センター
+            リフォームウォーカー
         </div>
         <nav>
             <button><a href="">ホーム</a></button>
             <button><a href="">会社検索</a></button>
+            <button><a href="">施工事例</a></button>
+            <button><a href="">ジャーナル</a></button>
             <button><a href="">よくある質問</a></button>
+
 
         </nav>
         <address>
             <button>
-                <a href=""><span>お問い合わせはこちらから</span>
+                <a href=""><span>営業時間 9:00～18:00</span>
                     <div>0120-523-233</div>
                 </a>
             </button>

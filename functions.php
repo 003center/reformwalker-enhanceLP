@@ -6,6 +6,8 @@ function add_my_files()
     //スタイルシートの読み込み
     wp_enqueue_style('reset.css', get_theme_file_uri('/assets/css/reset.css'));
     wp_enqueue_style('style.css', get_theme_file_uri('/assets/css/style.css'));
+    wp_enqueue_style('header.css', get_theme_file_uri('/assets/css/header.css'));
+
 
     // javascript読み込み
     wp_enqueue_script('main.js', get_theme_file_uri('/assets/js/main.js'));
