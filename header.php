@@ -21,6 +21,14 @@
     <!--ページURLを絶対パスで設定-->
     <meta property="og:url" content="URL" />
 
+    <!-- フォント-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Klee+One:wght@400;600&family=Zen+Maru+Gothic:wght@500&display=swap" rel="stylesheet">
+
+
+
+
     <?php wp_head(); ?>
 </head>
 
@@ -32,33 +40,47 @@
 
     <!--ヘッダー-->
     <header>
+        <div class="header-top" id="header-top">
+            <div class="header-name">
+                <a href=""> リフォームウォーカー
+                </a>
+            </div>
+            <div class="header-name-address">
 
-        <div>
-            リフォームウォーカー
+                <nav class="header-nav">
+                    <button><a href="">ホーム</a></button>
+                    <button><a href="">会社検索</a></button>
+                    <button><a href="">施工事例</a></button>
+                    <button><a href="">ジャーナル</a></button>
+                    <button><a href="">よくある質問</a></button>
+
+
+                </nav>
+                <address class="header-address">
+                    <button>
+                        <a href=""><span>営業時間 9:00～18:00</span>
+                            <div class="header-nav-tel">0120-523-233</div>
+                        </a>
+                    </button>
+                    <button>
+                        <a href="">
+                            <div>お問い合わせ</div>
+                        </a>
+                    </button>
+
+
+                </address>
+
+            </div>
+
+
+
         </div>
-        <nav>
-            <button><a href="">ホーム</a></button>
-            <button><a href="">会社検索</a></button>
-            <button><a href="">施工事例</a></button>
-            <button><a href="">ジャーナル</a></button>
-            <button><a href="">よくある質問</a></button>
 
-
-        </nav>
-        <address>
+        <div class="sticky-arrow">
             <button>
-                <a href=""><span>営業時間 9:00～18:00</span>
-                    <div>0120-523-233</div>
-                </a>
+                <a href="#header-top"></a>
             </button>
-            <button>
-                <a href="">
-                    <div>お問い合わせフォーム</div>
-                </a>
-            </button>
-
-
-        </address>
-
+        </div>
 
     </header>

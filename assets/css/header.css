@@ -1,0 +1,105 @@
+header {
+    position:relative;
+    z-index: 999;
+}
+.header-top {
+    display: flex;
+    background-color: rgba(217, 217, 217, 0.72);
+    font-size: 1.6rem;
+    padding: 1.5% 0 1% 0;
+    align-items: flex-end;
+}
+.header-name {
+    font-size: 3rem;
+    padding: 0 0 0 8%;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    position: relative;
+}
+.header-name::before {
+    content: "";
+    background-image: url(../img/ASBY不動産.svg);
+width:50px;
+height:50px;
+display: inline-block;
+background-size: cover;
+vertical-align: middle;
+transform: scale(3.5);
+position: absolute;
+left:0;
+bottom:0;
+}
+.header-nav {
+    margin-left: auto;
+    display: flex;
+
+}
+.header-nav a {
+    font-family: 'Klee One', cursive;
+    display: block;
+    width: 100px;
+    text-align: center;
+}
+.header-address span {
+    font-size: 1rem;
+}
+.header-nav-tel {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Zen Maru Gothic', sans-serif;
+
+}
+.header-address {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 0 0 3%;
+    gap:3px;
+    margin:0 0 0 auto;
+    width: 300px;
+    text-align: center;
+}
+.header-name-address {
+    display: flex;
+    margin:0 0 0 auto  ;
+    align-items: flex-end;
+}
+
+.header-address button {
+}
+.header-address button:first-child{
+    line-height: 1.5rem;
+    background-color:rgb(255, 255, 255);
+    border:#337AA6 solid 3px;
+    padding:10% 0;
+    width:100%;
+}
+.header-address button:last-child{
+    width:100%;
+    background-color:#337AA6;
+color:white;
+padding:25% 0 0 0;
+position: relative;
+}
+.header-address button:last-child::before{
+    content: "";
+    background-image: url(../img/メールアイコン.png);
+    width:35px;
+    height:35px;
+    background-size: cover;
+    vertical-align: middle;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%,20%);
+}
+
+.sticky-arrow a::before{
+    content: "";
+    background-image: url(../img/丸枠付き三角.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    vertical-align: middle;
+    position: fixed;
+    right: 4%;
+    bottom: 10%;
+}

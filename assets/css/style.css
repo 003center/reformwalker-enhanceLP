@@ -1,0 +1,13 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+
+a{
+    display: block;
+}
+
+body {
+    background-color: #F9FFDF;
+}

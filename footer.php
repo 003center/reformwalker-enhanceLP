@@ -26,9 +26,10 @@
     </address>
 
 
-    <small>Copyright &copy;tyusyoukigyoukeieisienncenter All right reserved.
+    <small>Copyright &copy;ReformWalker All right reserved.
     </small>
 </footer>
+
 <?php wp_footer(); ?>
 </body>
 

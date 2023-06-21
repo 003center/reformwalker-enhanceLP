@@ -1,4 +1,215 @@
 <?php get_header(); ?>
+<section class="hero-image">
+    <div class="hero-image-txt">
+        <span>Always stand by you</span>
+        <h1>地域密着型<br>リフォーム検索サイト</h1>
+        <button>
+            <a href="">
+                会社検索
+            </a>
+        </button>
+    </div>
+
+</section>
+
+
+
+
+<section class="journal">
+    <div class="journal-top">
+        <h2>OUR JOURNAL</h2><a href="">すべて見る></a>
+
+    </div>
+    <div class="journal-images">
+        <a href="" class="journal-image">
+            <figure>
+                <img decoding=“async” src="<?php echo get_template_directory_uri(); ?>/assets/img/journal-living.jpg" alt="美しい内装の芸術性">
+                <figcaption>美しい内装の芸術性</figcaption>
+            </figure>
+        </a>
+
+        <a href="" class="journal-image">
+            <figure>
+                <img decoding=“async” src="<?php echo get_template_directory_uri(); ?>/assets/img/journal-house.jpg" alt="豪華で高貴な魅力溢れる家のリフォーム">
+                <figcaption>豪華で高貴な魅力溢れる家のリフォーム</figcaption>
+            </figure>
+        </a>
+
+
+        <a href="" class="journal-image">
+            <figure>
+                <img decoding=“async” src="<?php echo get_template_directory_uri(); ?>/assets/img/journal-toilet.jpg" alt="快適さと美しさを追求したトイレの豪華なリフォーム">
+                <figcaption>快適さと美しさを追求したトイレの豪華なリフォーム</figcaption>
+            </figure>
+        </a>
+
+    </div>
+</section>
+
+
+<section class="top-questions-wrap">
+    <h2>みんなのお悩み</h2>
+    <div class="top-questions">
+        <div class="top-question">
+            <button>
+                <a href="">リフォームとリノベーションの違いってなに？</a>
+            </button>
+        </div>
+        <div class="top-question">
+            <button>
+                <a href="">リフォームとリノベーションの違いってなに？</a>
+            </button>
+        </div>
+        <div class="top-question">
+            <button>
+                <a href="">リフォームとリノベーションの違いってなに？</a>
+            </button>
+        </div>
+        <div class="top-question">
+            <button>
+                <a href="">リフォームとリノベーションの違いってなに？</a>
+            </button>
+        </div>
+        <div class="top-question">
+            <button>
+                <a href="">リフォームとリノベーションの違いってなに？</a>
+            </button>
+        </div>
+        <div class="top-question">
+            <button>
+                <a href="">リフォームとリノベーションの違いってなに？</a>
+            </button>
+        </div>
+        <div class="top-question">
+            <button>
+                <a href="">リフォームとリノベーションの違いってなに？</a>
+            </button>
+        </div>
+        <div class="top-question">
+            <button>
+                <a href="">リフォームとリノベーションの違いってなに？</a>
+            </button>
+        </div>
+        <div class="top-question">
+            <button>
+                <a href="">リフォームとリノベーションの違いってなに？</a>
+            </button>
+        </div>
+        <div class="top-question">
+            <button>
+                <a href="">リフォームとリノベーションの違いってなに？</a>
+            </button>
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+
+<section class="reform-areas-wrap">
+    <h2>リフォーム可能箇所</h2>
+    <div class="reform-areas">
+        <a href="" class="reform-area">
+            <figure>
+                <img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-kitchen.jpg" alt="キッチン">
+                <figcaption>キッチン</figcaption>
+            </figure>
+        </a>
+        <a href="" class="reform-area">
+            <figure>
+                <img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-toilet.jpg" alt="トイレ">
+                <figcaption>トイレ</figcaption>
+            </figure>
+        </a>
+        <a href="" class="reform-area">
+            <figure>
+                <img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-genkan.jpg" alt="玄関">
+                <figcaption>玄関</figcaption>
+            </figure>
+        </a>
+        <a href="" class="reform-area">
+            <figure>
+                <img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-yane.jpg" alt="屋根">
+                <figcaption>屋根</figcaption>
+            </figure>
+        </a>
+        <a href="" class="reform-area">
+            <figure>
+                <img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-bath.jpg" alt="お風呂">
+                <figcaption>お風呂</figcaption>
+            </figure>
+        </a>
+        <a href="" class="reform-area">
+            <figure>
+                <img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-wasitsu.jpg" alt="和室">
+                <figcaption>和室</figcaption>
+            </figure>
+        </a>
+        <a href="" class="reform-area">
+            <figure>
+                <img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-yousitu.jpg" alt="洋室">
+                <figcaption>洋室</figcaption>
+            </figure>
+        </a>
+        <a href="" class="reform-area">
+            <figure>
+                <img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-sink.jpg" alt="洗面台">
+                <figcaption>洗面台</figcaption>
+            </figure>
+        </a>
+        <a href="" class="reform-area">
+            <figure>
+                <img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-living.jpg" alt="リビング">
+                <figcaption>リビング</figcaption>
+            </figure>
+        </a>
+    </div>
+    <div class="reform-area-p">
+        <p>こちらに掲載されていない箇所でもリフォーム可能な場合もございます。<br>
+            お気軽にお問い合わせください。</p>
+    </div>
+
+
+</section>
+
+
+
+<section class="reform-step-wrap">
+    <h2>リフォームまでの流れ</h2>
+    <div class="reform-steps">
+        <div class="reform-step">
+            <h3>お問い合わせ</h3>
+            <p>お電話もしくはお問い合わせフォームよりお問い合わせください。</p>
+        </div>
+        <div class="reform-step">
+            <h3>業者を紹介</h3>
+            <p>弊社よりお電話もしくはメールにて業者をご紹介させていただきます。
+                複数社紹介することも可能です。
+                遠慮なく比較、検討し最適な業者をお選びただくことができます。</p>
+        </div>
+
+        <div class="reform-step">
+            <h3>施工</h3>
+            <p>納得のいく業者が決まればあとはその業者と打ち合わせののちに施工となります。</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <section>
     <h1>あなたのための理想の建築会社を見つけるための最適なソリューション提供する総合建築検索サイト</h1>
@@ -120,11 +331,12 @@
             <span>春日井市<br>浴室・脱衣所リフォーム</span>
             <div>
                 <figure> <img src="" alt="">
-                <figcaption>before</figcaption>
+                    <figcaption>before</figcaption>
                 </figure>
- </figure>
-            <figure> <img src="" alt=""> <figcaption>After</figcaption>
-                 </figure>
+                </figure>
+                <figure> <img src="" alt="">
+                    <figcaption>After</figcaption>
+                </figure>
             </div>
         </div>
 
