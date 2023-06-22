@@ -48,8 +48,8 @@
             <div class="header-name-address">
 
                 <nav class="header-nav">
-                    <button><a href="">ホーム</a></button>
-                    <button><a href="">会社検索</a></button>
+                    <button><a href="<?php echo home_url(); ?>">ホーム</a></button>
+                    <button><a href="/company">会社検索</a></button>
                     <button><a href="">施工事例</a></button>
                     <button><a href="">ジャーナル</a></button>
                     <button><a href="">よくある質問</a></button>
