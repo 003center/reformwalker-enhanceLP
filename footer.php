@@ -1,13 +1,13 @@
 <footer>
     <div class="footer-top">
-        <button class="footer-top-cobtn"><a href="">会社一覧はこちらから　＞</a></button>
+        <button class="footer-top-cobtn"><a href="<?php echo home_url(); ?>/company">会社一覧はこちらから　＞</a></button>
 
         <p>お問い合わせはこちらから！</p>
         <address class="footer-top-address">
             <button>
-                <a href=""><span>営業時間 9:00～18:00</span>
-                    <div class="footer-top-tel">0120-523-233</div>
-                </a>
+                <span>営業時間 9:00～18:00</span>
+                <div class="footer-top-tel">0120-523-233</div>
+
             </button>
             <button>
                 <a href="">
@@ -27,7 +27,7 @@
             <div class="footer-bottom-fix">
                 <nav>
                     <button><a href="<?php echo home_url(); ?>">ホーム</a></button>
-                    <button><a href="">会社検索</a></button>
+                    <button><a href="<?php echo home_url(); ?>/company">会社一覧</a></button>
                     <button><a href="">よくある質問</a></button>
                     <button><a href="">会社一覧</a></button>
                     <button><a href="">プライバシーポリシー</a></button>

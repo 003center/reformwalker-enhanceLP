@@ -4,8 +4,8 @@
         <span>Always stand by you</span>
         <h1> <strong> 地域密着型<br>リフォーム検索サイト</strong></h1>
         <button>
-            <a href="">
-                会社検索
+            <a href="<?php echo home_url(); ?>/company">
+                会社一覧
             </a>
         </button>
     </div>
@@ -426,7 +426,4 @@
 
 </section>
 
-<div class="btn">
-    <a href="<?php echo home_url(); ?>/company">記事の一覧をみる</a>
-</div>
 <?php get_footer(); ?>

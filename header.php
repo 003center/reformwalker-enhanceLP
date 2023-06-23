@@ -42,14 +42,14 @@
     <header>
         <div class="header-top" id="header-top">
             <div class="header-name">
-                <a href=""> リフォームウォーカー
+                <a href="<?php echo home_url() ?>"> リフォームウォーカー
                 </a>
             </div>
             <div class="header-name-address">
 
                 <nav class="header-nav">
                     <button><a href="<?php echo home_url(); ?>">ホーム</a></button>
-                    <button><a href="/company">会社検索</a></button>
+                    <button><a href="/company">会社一覧</a></button>
                     <button><a href="">施工事例</a></button>
                     <button><a href="">ジャーナル</a></button>
                     <button><a href="">よくある質問</a></button>
@@ -58,9 +58,9 @@
                 </nav>
                 <address class="header-address">
                     <button>
-                        <a href=""><span>営業時間 9:00～18:00</span>
-                            <div class="header-nav-tel">0120-523-233</div>
-                        </a>
+                        <span>営業時間 9:00～18:00</span>
+                        <div class="header-nav-tel">0120-523-233</div>
+
                     </button>
                     <button>
                         <a href="">

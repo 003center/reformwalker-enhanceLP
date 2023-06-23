@@ -1,5 +1,7 @@
 <?php get_header(); ?>
+<div class="archive-company-hero">
 
+</div>
 <?php
 $args = array(
     'post_type' => 'company',
@@ -7,68 +9,38 @@ $args = array(
     'order' => 'ASC',
 );
 $the_query = new WP_Query($args);
-if ($the_query->have_posts()) :
 ?>
-    <div class="staffs">
+<div class="archive-company-wrap">
 
+    <div class="archive-company-grid">
+        <?php if ($the_query->have_posts()) :
+            while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
-        <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-            <div class="staff">
-                <div class="staff_name">
-                    <h2><?php echo CFS()->get("company"); ?></h2>
-                </div>
-                <div class="staff_info">
-                    <div class="staff_info_left">
-                        <?php if (post_custom('s_img')) : ?>
-
-                            <div class="staff_img">
-                                <img src="<?php echo CFS()->get("s_img"); ?>" alt="" loading="lazy">
-                            </div>
-                        <?php endif ?>
-
-                    </div>
-
-                    <div class="staff_info_right">
-
-                        <?php if (post_custom('s_like')) : ?>
-                            <div class="staff_info_like">
-                                <div class="sil">[趣味]</div>
-                                <div class="sir"><?php echo CFS()->get("s_like"); ?></div>
-                            </div>
-                        <?php endif ?>
-
-
-
-                        <?php if (post_custom('s_pr')) : ?>
-                            <div class="staff_info_pr">
-                                <div class="sil">[コメント]</div>
-                                <div class="sir"><?php echo CFS()->get("s_pr"); ?></div>
-                            </div>
-                        <?php endif ?>
-
-
-
-
+                <a href="<?php the_permalink(); ?>" class="archive-company-content">
+                    <figure>
+                        <img src="<?php echo CFS()->get("top-img"); ?>" alt="">
+                    </figure>
+                    <div class="archive-company-txt">
+                        <?php echo CFS()->get("company"); ?>
 
 
                     </div>
-                </div>
-            </div>
-        <?php endwhile;; ?>
+                    <div class="archive-company-region">
+                        <?php echo CFS()->get("region"); ?>
+                    </div>
+                </a>
+
+
+            <?php endwhile;; ?>
     </div>
-    <div class="navigation">
-        <?php if (function_exists('wp_pagenavi')) : ?>
-            <?php wp_pagenavi(array('query' => $the_query)); ?>
-        <?php else : ?>
-        <?php endif; ?>
-    </div>
+</div>
+
 
 <?php endif;
-wp_reset_postdata()
+        wp_reset_postdata()
 ?>
 
 
-<?php  ?>
 
 
 <?php get_footer(); ?>

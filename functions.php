@@ -9,6 +9,11 @@ function add_my_files()
     wp_enqueue_style('header.css', get_theme_file_uri('/assets/css/header.css'));
     wp_enqueue_style('frontpage.css', get_theme_file_uri('/assets/css/frontpage.css'));
     wp_enqueue_style('footer.css', get_theme_file_uri('/assets/css/footer.css'));
+    wp_enqueue_style('single-company.css', get_theme_file_uri('/assets/css/single-company.css'));
+    wp_enqueue_style('archive-company.css', get_theme_file_uri('/assets/css/archive-company.css'));
+    wp_enqueue_style('single-construction.css', get_theme_file_uri('/assets/css/single-construction.css'));
+
+
 
 
     // javascript読み込み
@@ -61,13 +66,28 @@ function company_register()
         "hierarchical" => true,
         "rewrite" => ["slugs" => "company", "with_front" => true],
         "query_var" => true,
-        "menu_position" => 3,
+        "menu_position" => 2,
         "supports" => ["title", "editor", "thumbnail",]
 
     ];
     register_post_type("company", $args);
 }
 add_action('init', 'company_register');
+
+
+function register_region_taxonomy()
+{
+    $args = array(
+        'label' => '地域', // タクソノミーの表示名
+        'public' => true,
+        'rewrite' => array('slug' => 'region-category'), // カテゴリーページのパーマリンク
+        'hierarchical' => true,
+    );
+    register_taxonomy('region_category', array('company'), $args); // 'your_custom_post_type' にはカスタム投稿タイプのスラッグを指定
+}
+add_action('init', 'register_region_taxonomy');
+
+
 
 /**施工事例のカスタムフィールド */
 function construction_register()
@@ -97,6 +117,43 @@ function construction_register()
     register_post_type("construction ", $args);
 }
 add_action('init', 'construction_register');
+
+
+function register_location_taxonomy()
+{
+    $args = array(
+        'label' => '場所', // タクソノミーの表示名
+        'public' => true,
+        'rewrite' => array('slug' => 'location-category'), // カテゴリーページのパーマリンク
+        'hierarchical' => true,
+    );
+    register_taxonomy('location_category', array('construction'), $args); // 'your_custom_post_type' にはカスタム投稿タイプのスラッグを指定
+}
+add_action('init', 'register_location_taxonomy');
+
+
+
+function save_custom_field_values($post_id)
+{
+    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
+        return;
+    }
+
+    // 地域カテゴリーの関連付け
+    if (isset($_POST['company'])) {
+        $region_value = $_POST['company'];
+        wp_set_post_terms($post_id, $region_value, 'region_category'); // 'region_category' は地域カテゴリーのスラッグ
+    }
+
+    // 場所カテゴリーの関連付け
+    if (isset($_POST['construction'])) {
+        $location_value = $_POST['construction'];
+        wp_set_post_terms($post_id, $location_value, 'location_category'); // 'location_category' は場所カテゴリーのスラッグ
+    }
+}
+add_action('save_post', 'save_custom_field_values');
+
+
 
 /**アーカイブON */
 function post_has_archive($args, $post_type)
