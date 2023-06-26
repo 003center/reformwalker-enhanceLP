@@ -100,7 +100,7 @@ transition: all .2s ease-out;
 .journal-images img {
         aspect-ratio: 1.5/1.7;
         transition: all .3s ease;
-
+        width:100%;
 }
 .journal-image {
     position: relative;

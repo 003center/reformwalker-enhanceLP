@@ -109,58 +109,58 @@
 
 
 
-<section class="reform-areas-wrap">
-    <h2>リフォーム可能箇所</h2>
+<section id="reform-area" class="reform-areas-wrap">
+    <h2>施工事例</h2>
     <div class="reform-areas">
-        <a href="" class="reform-area">
+        <a href="/kitchen" class="reform-area">
             <figure>
                 <img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-kitchen.jpg" alt="キッチン">
                 <figcaption>キッチン</figcaption>
             </figure>
         </a>
-        <a href="" class="reform-area">
+        <a href="/toilet" class="reform-area">
             <figure>
                 <img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-toilet.jpg" alt="トイレ">
                 <figcaption>トイレ</figcaption>
             </figure>
         </a>
-        <a href="" class="reform-area">
+        <a href="/genkan" class="reform-area">
             <figure>
                 <img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-genkan.jpg" alt="玄関">
                 <figcaption>玄関</figcaption>
             </figure>
         </a>
-        <a href="" class="reform-area">
+        <a href="/yane" class="reform-area">
             <figure>
                 <img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-yane.jpg" alt="屋根">
                 <figcaption>屋根</figcaption>
             </figure>
         </a>
-        <a href="" class="reform-area">
+        <a href="/bath" class="reform-area">
             <figure>
                 <img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-bath.jpg" alt="お風呂">
                 <figcaption>お風呂</figcaption>
             </figure>
         </a>
-        <a href="" class="reform-area">
+        <a href="/wasitu" class="reform-area">
             <figure>
                 <img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-wasitsu.jpg" alt="和室">
                 <figcaption>和室</figcaption>
             </figure>
         </a>
-        <a href="" class="reform-area">
+        <a href="/yousitu" class="reform-area">
             <figure>
                 <img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-yousitu.jpg" alt="洋室">
                 <figcaption>洋室</figcaption>
             </figure>
         </a>
-        <a href="" class="reform-area">
+        <a href="/sink" class="reform-area">
             <figure>
                 <img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-sink.jpg" alt="洗面台">
                 <figcaption>洗面台</figcaption>
             </figure>
         </a>
-        <a href="" class="reform-area">
+        <a href="/living" class="reform-area">
             <figure>
                 <img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-living.jpg" alt="リビング">
                 <figcaption>リビング</figcaption>
@@ -224,7 +224,7 @@
                     リフォームは部分的な改修が一般的で、予算や期間も比較的短くなりますが、リノベーションは全体的な変更が行われるため、より大規模かつ時間・費用がかかる場合があります。
 
                 </p>
-                <a href="">リフォーム実績はこちら　　＞</a>
+                <a href="<?php echo home_url() ?>/#reform-area">リフォーム実績はこちら　　＞</a>
 
             </div>
         </details>
@@ -242,7 +242,7 @@
                     リフォームは部分的な改修が一般的で、予算や期間も比較的短くなりますが、リノベーションは全体的な変更が行われるため、より大規模かつ時間・費用がかかる場合があります。
 
                 </p>
-                <a href="">リフォーム実績はこちら　　＞</a>
+                <a href="<?php echo home_url() ?>/#reform-area">リフォーム実績はこちら　　＞</a>
 
             </div>
         </details>
@@ -260,7 +260,7 @@
                     リフォームは部分的な改修が一般的で、予算や期間も比較的短くなりますが、リノベーションは全体的な変更が行われるため、より大規模かつ時間・費用がかかる場合があります。
 
                 </p>
-                <a href="">リフォーム実績はこちら　　＞</a>
+                <a href="<?php echo home_url() ?>/#reform-area">リフォーム実績はこちら　　＞</a>
 
             </div>
         </details>
@@ -278,7 +278,7 @@
                     リフォームは部分的な改修が一般的で、予算や期間も比較的短くなりますが、リノベーションは全体的な変更が行われるため、より大規模かつ時間・費用がかかる場合があります。
 
                 </p>
-                <a href="">リフォーム実績はこちら　　＞</a>
+                <a href="<?php echo home_url() ?>/#reform-area">リフォーム実績はこちら　　＞</a>
 
             </div>
         </details>
@@ -296,7 +296,7 @@
                     リフォームは部分的な改修が一般的で、予算や期間も比較的短くなりますが、リノベーションは全体的な変更が行われるため、より大規模かつ時間・費用がかかる場合があります。
 
                 </p>
-                <a href="">リフォーム実績はこちら　　＞</a>
+                <a href="<?php echo home_url() ?>/#reform-area">リフォーム実績はこちら　　＞</a>
 
             </div>
         </details>
@@ -314,7 +314,7 @@
                     リフォームは部分的な改修が一般的で、予算や期間も比較的短くなりますが、リノベーションは全体的な変更が行われるため、より大規模かつ時間・費用がかかる場合があります。
 
                 </p>
-                <a href="">リフォーム実績はこちら　　＞</a>
+                <a href="<?php echo home_url() ?>/#reform-area">リフォーム実績はこちら　　＞</a>
 
             </div>
         </details>
@@ -332,7 +332,7 @@
                     リフォームは部分的な改修が一般的で、予算や期間も比較的短くなりますが、リノベーションは全体的な変更が行われるため、より大規模かつ時間・費用がかかる場合があります。
 
                 </p>
-                <a href="">リフォーム実績はこちら　　＞</a>
+                <a href="<?php echo home_url() ?>/#reform-area">リフォーム実績はこちら　　＞</a>
 
             </div>
         </details>
@@ -350,7 +350,7 @@
                     リフォームは部分的な改修が一般的で、予算や期間も比較的短くなりますが、リノベーションは全体的な変更が行われるため、より大規模かつ時間・費用がかかる場合があります。
 
                 </p>
-                <a href="">リフォーム実績はこちら　　＞</a>
+                <a href="<?php echo home_url() ?>/#reform-area">リフォーム実績はこちら　　＞</a>
 
             </div>
         </details>
@@ -368,7 +368,7 @@
                     リフォームは部分的な改修が一般的で、予算や期間も比較的短くなりますが、リノベーションは全体的な変更が行われるため、より大規模かつ時間・費用がかかる場合があります。
 
                 </p>
-                <a href="">リフォーム実績はこちら　　＞</a>
+                <a href="<?php echo home_url() ?>/#reform-area">リフォーム実績はこちら　　＞</a>
 
             </div>
         </details>
@@ -386,7 +386,7 @@
                     リフォームは部分的な改修が一般的で、予算や期間も比較的短くなりますが、リノベーションは全体的な変更が行われるため、より大規模かつ時間・費用がかかる場合があります。
 
                 </p>
-                <a href="">リフォーム実績はこちら　　＞</a>
+                <a href="<?php echo home_url() ?>/#reform-area">リフォーム実績はこちら　　＞</a>
 
             </div>
         </details>

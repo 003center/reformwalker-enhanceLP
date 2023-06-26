@@ -50,9 +50,9 @@
                 <nav class="header-nav">
                     <button><a href="<?php echo home_url(); ?>">ホーム</a></button>
                     <button><a href="/company">会社一覧</a></button>
-                    <button><a href="">施工事例</a></button>
+                    <button><a href="<?php echo home_url() ?>/#reform-area">施工事例</a></button>
                     <button><a href="">ジャーナル</a></button>
-                    <button><a href="">よくある質問</a></button>
+                    <button><a href="/faq">よくある質問</a></button>
 
 
                 </nav>
@@ -63,7 +63,7 @@
 
                     </button>
                     <button>
-                        <a href="">
+                        <a href="/contact">
                             <div>お問い合わせ</div>
                         </a>
                     </button>

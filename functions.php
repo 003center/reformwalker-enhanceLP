@@ -12,6 +12,14 @@ function add_my_files()
     wp_enqueue_style('single-company.css', get_theme_file_uri('/assets/css/single-company.css'));
     wp_enqueue_style('archive-company.css', get_theme_file_uri('/assets/css/archive-company.css'));
     wp_enqueue_style('single-construction.css', get_theme_file_uri('/assets/css/single-construction.css'));
+    wp_enqueue_style('archive-construction.css', get_theme_file_uri('/assets/css/archive-construction.css'));
+    wp_enqueue_style('contact.css', get_theme_file_uri('/assets/css/contact.css'));
+
+    wp_enqueue_style('faq.css', get_theme_file_uri('/assets/css/faq.css'));
+    wp_enqueue_style('policy.css', get_theme_file_uri('/assets/css/policy.css'));
+    wp_enqueue_style('thanks.css', get_theme_file_uri('/assets/css/thanks.css'));
+    wp_enqueue_style('single-journal.css', get_theme_file_uri('/assets/css/single-journal.css'));
+    wp_enqueue_style('archive-journal.css', get_theme_file_uri('/assets/css/archive-journal.css'));
 
 
 
@@ -113,6 +121,7 @@ function construction_register()
         "menu_position" => 3,
         "supports" => ["title", "editor", "thumbnail",]
 
+
     ];
     register_post_type("construction ", $args);
 }
@@ -152,6 +161,35 @@ function save_custom_field_values($post_id)
     }
 }
 add_action('save_post', 'save_custom_field_values');
+
+/**OUR JOURNALのカスタムフィールド */
+function journal_register()
+{
+    $labels = [
+        "edit_item" => "Edit",
+    ];
+    $args = [
+        "label" => "JOURNAL",
+        "labels" => $labels,
+        "description" => "",
+        "public" => true,
+        "show_in_rest" => true,
+        "rest_base" => "",
+        "rest_controller_class" => "WP_REST_Posts_Controller",
+        "has_archive" => true,
+        "delete_with_user" => false,
+        "exclude_from_search" => false,
+        "map_meta_cap" => true,
+        "hierarchical" => true,
+        "rewrite" => ["slugs" => "jounal", "with_front" => true],
+        "query_var" => true,
+        "menu_position" => 2,
+        "supports" => ["title", "editor", "thumbnail",]
+
+    ];
+    register_post_type("journal", $args);
+}
+add_action('init', 'journal_register');
 
 
 

@@ -157,14 +157,14 @@ padding:1% 0 6% 0 ;}
 .footer-bottom-address a{
     display: block;
     width: 100%;
-    line-height: 3rem;
     background: #3AAAE2;
     text-align: center;
     border: 2px solid white;
-    padding:12% 0;
+    padding: 12% 0;
     font-family: 'Zen Maru Gothic', sans-serif;
-
+    height: 100px;
 }
+
 .footer-bottom-tel {
     width:100%;
 }
@@ -173,5 +173,7 @@ padding:1% 0 6% 0 ;}
     color: #000;
     background-color: white;
     border: 2px solid white;
-    padding:5.8% 0;
-}
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}

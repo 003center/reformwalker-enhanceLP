@@ -10,7 +10,7 @@
 
             </button>
             <button>
-                <a href="">
+                <a href="/contact">
                     <div>お問い合わせ</div>
                 </a>
             </button>
@@ -28,21 +28,21 @@
                 <nav>
                     <button><a href="<?php echo home_url(); ?>">ホーム</a></button>
                     <button><a href="<?php echo home_url(); ?>/company">会社一覧</a></button>
-                    <button><a href="">よくある質問</a></button>
-                    <button><a href="">会社一覧</a></button>
-                    <button><a href="">プライバシーポリシー</a></button>
+                    <button><a href="/faq">よくある質問</a></button>
+                    <button><a href="/company">会社一覧</a></button>
+                    <button><a href="/policy">プライバシーポリシー</a></button>
 
 
                 </nav>
 
                 <address>
                     <button class="footer-bottom-tel">
-                        <a href=""><span>お問い合わせはこちらから</span>
+                        <a><span>お問い合わせはこちらから</span>
                             <div>0120-523-233</div>
                         </a>
                     </button>
                     <button class="footer-bottom-address">
-                        <a href="">
+                        <a href="/contact">
                             <div>お問い合わせフォーム</div>
                         </a>
                     </button>

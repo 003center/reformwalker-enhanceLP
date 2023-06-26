@@ -81,9 +81,10 @@ position: relative;
 }
 .header-address button:last-child a{
     padding:25% 0 0 0;
-
+    z-index: 999;
+    position: inherit;
 }
-.header-address button:last-child::before{
+.header-address button:last-child::after{
     content: "";
     background-image: url(../img/メールアイコン.png);
     width:35px;
@@ -95,7 +96,9 @@ position: relative;
     bottom: 50%;
     transform: translate(-50%,20%);
 }
-
+.sticky-arrow {
+    height: 0;
+}
 .sticky-arrow a::before{
     content: "";
     background-image: url(../img/丸枠付き三角.png);

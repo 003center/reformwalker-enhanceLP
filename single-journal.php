@@ -1,28 +1,36 @@
 <?php get_header(); ?>
+<?php if (have_posts()) : ?>
+    <?php while (have_posts()) : the_post(); ?>
+        <div class="single-journal-wrap">
+            <?php the_content(); ?>
+
+        </div>
+
+        </div>
+    <?php endwhile; ?>
+<?php endif; ?>
 <?php
 $args = array(
-    'post_type' => 'construction',
-    'posts_per_page' => 30,
+    'post_type' => 'journal',
+    'posts_per_page' => 3,
     'order' => 'ASC',
 );
 $the_query = new WP_Query($args);
 if ($the_query->have_posts()) :
 ?>
-    <div class="archive-construction-wrap">
+    <div class="">
 
-        <div class="archive-construction-grid">
+        <div class="">
 
             <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
-                <div class="archive-construction-content">
-                    <div class="figure">
-                        <img src="<?php echo CFS()->get("img1"); ?>" alt="リフォーム事例１">
+                <div class="">
+                    <div class="">
+                        <img src="<?php echo CFS()->get("thum"); ?>" alt="">
                         <figcaption>
-                            <p> <?php echo CFS()->get("sekou"); ?>
+                            <p> <?php echo CFS()->get("title"); ?>
                             </p>
 
-                            <p> 工賃 <span></span> <?php echo CFS()->get("hiyou"); ?>
-                            </p>
                         </figcaption>
                     </div>
                 </div>
@@ -48,8 +56,6 @@ if ($the_query->have_posts()) :
 <?php endif;
 wp_reset_postdata()
 ?>
-
-
 
 
 <?php get_footer(); ?>

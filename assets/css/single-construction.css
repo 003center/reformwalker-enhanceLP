@@ -16,7 +16,7 @@
     width: 100%;
     border-radius: 11px;
     background: #FFF;
-    margin: 2% 0 0 0;
+    margin: 6% 0 0 0;
     padding: 5% 10%;
     border-radius: 15px;
     background: #FFF;
@@ -98,3 +98,56 @@ top:-13%;
 section.construction-ba {
     margin: 5% 0 8% 0;
 }
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2% 0 0 0;
+  }
+  .main-image {
+    width: 100%;
+}
+.main-image img {
+    width: 100%;
+    aspect-ratio: 2/1;
+}  
+  .thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .thumbnails img {
+    width: 160px;
+    height: 160px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .thumbnails img:hover {
+    border: 2px solid blue;
+  }
+
+  
+  .single-construction-top figure img{
+    width:100%;
+    aspect-ratio: 2/1;
+
+  }
+  .single-construction-top {
+    position: relative;
+  }
+  .single-construction-top figcaption {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    font-size: 5rem;
+    color: white;
+    background-color: #FFD60066;
+    font-family: 'Klee One', cursive;
+    padding: 2% 5%;
+    display: flex;
+    text-shadow: 3px 3px 3px black;
+}
+
