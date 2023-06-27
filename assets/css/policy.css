@@ -12,4 +12,10 @@
         font-size: 3rem;
         padding:2% 5%;
     }
+
+    @media screen and (max-width: 768px) {
+        .policy-wrap {
+            width: 95%;
+        }
+    }
     

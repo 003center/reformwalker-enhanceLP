@@ -25,6 +25,55 @@
     width: 35%;
     background: #eee;
     }
+        /*「必須」文字デザイン*/
+        .required{
+            font-size:.8em;
+            padding: 5px;
+            background: #f50000;
+            color: #fff;
+            border-radius: 3px;
+            margin-right: 5px;
+            }
+            
+            /*「任意」文字デザイン*/
+            .optional{
+            font-size:.8em;
+            padding: 5px;
+            background: #000080;
+            color: #fff;
+            border-radius: 3px;
+            margin-right: 5px;
+            }
+            
+            /* 入力項目を見やすく */
+            input.wpcf7-form-control.wpcf7-text,
+            textarea.wpcf7-form-control.wpcf7-textarea {
+                width: 100%;
+                padding: 8px 15px;
+                margin-right: 10px;
+                margin-top: 10px;
+                border: 1px solid #d0d5d8;
+                border-radius: 3px;
+                background-color: #eff1f5;
+            }
+            textarea.wpcf7-form-control.wpcf7-textarea {
+                height: 200px;
+            }
+            
+            /* 「送信する」ボタン */
+            input.wpcf7-submit {
+                display: block;
+                padding: 15px;
+                width: 400px;
+                background: #ffaa56;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 700;
+                border-radius: 2px;
+                margin: 15px auto 0;
+                text-align: center;
+            }
+        
     @media screen and (max-width:768px){
     #cf-tbl{
     width: 100%;
@@ -39,72 +88,36 @@
     }
     
     #cf-tbl table{
-    width: 100%;
+    width: 95%;
     border-width: 0 0 1px 0;
-    }
+    margin:0 auto;
+    border:none;
+}
     
     #cf-tbl table tr th,
     #cf-tbl table tr td{
     width: 100%;
-    padding: 3% 5%;
+    padding: 3% 5% 8% 5%;
     }
     
     #cf-tbl table tr td{
     border-width: 0px 1px 0px 1px;
-    }
-    }
-    /*「必須」文字デザイン*/
-    .required{
-    font-size:.8em;
-    padding: 5px;
-    background: #f50000;
-    color: #fff;
-    border-radius: 3px;
-    margin-right: 5px;
-    }
-    
-    /*「任意」文字デザイン*/
-    .optional{
-    font-size:.8em;
-    padding: 5px;
-    background: #000080;
-    color: #fff;
-    border-radius: 3px;
-    margin-right: 5px;
-    }
-    
-    /* 入力項目を見やすく */
-    input.wpcf7-form-control.wpcf7-text,
-    textarea.wpcf7-form-control.wpcf7-textarea {
-        width: 100%;
-        padding: 8px 15px;
-        margin-right: 10px;
-        margin-top: 10px;
-        border: 1px solid #d0d5d8;
-        border-radius: 3px;
-        background-color: #eff1f5;
+    border:none;
+    height:100px;
+    padding:0;
     }
     textarea.wpcf7-form-control.wpcf7-textarea {
-        height: 200px;
+        height: 160px;
     }
-    
-    /* 「送信する」ボタン */
-    input.wpcf7-submit {
-        display: block;
-        padding: 15px;
-        width: 400px;
-        background: #ffaa56;
-        color: #fff;
-        font-size: 18px;
-        font-weight: 700;
-        border-radius: 2px;
-        margin: 15px auto 0;
-        text-align: center;
     }
     @media screen and (max-width:768px){
     input.wpcf7-submit {
     width: 250px;
     }
+    input.wpcf7-submit {
+        margin: 30% auto 0;
+    }
+
     }
     
     input.wpcf7-submit:hover {

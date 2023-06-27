@@ -151,3 +151,32 @@ section.construction-ba {
     text-shadow: 3px 3px 3px black;
 }
 
+@media screen and (max-width: 768px) {
+    .single-constructino-wrap {
+        width: 95%;
+    }
+    .thumbnails img {
+        width: 60px;
+        height: 60px;
+    }
+    .main-image img {
+        aspect-ratio: 1.5/1;
+    }
+    .construction-about-table {
+        margin: 10% 0 0 0;
+    }
+    section.construction-about-message {
+        margin: 10% 0 0 0;
+    }
+    .construction-ba-grid {
+        grid-template-columns: 1fr;
+        gap: 10% 8%;
+        margin-bottom:35%;
+    }
+    .construction-ba-grid figure:first-child:before {
+        display: none;
+    }
+    .single-construction-top figcaption {
+        font-size: 3rem;
+    }
+}

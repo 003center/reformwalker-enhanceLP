@@ -45,3 +45,10 @@ a.archive-company-content:hover {
     left: 0%;
     background-color: #4d7dff;
 }
+
+@media screen and (max-width: 768px) {
+    .archive-company-grid {
+        grid-template-columns: 1fr;
+        gap: 5% 5%;
+    }
+}

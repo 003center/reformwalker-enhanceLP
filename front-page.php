@@ -12,39 +12,57 @@
 
 </section>
 
-
-
-
 <section class="journal">
     <div class="journal-top">
-        <h2>OUR JOURNAL</h2><a href="">すべて見る></a>
+        <h2>OUR JOURNAL</h2><a href="/journal">すべて見る></a>
 
     </div>
     <div class="journal-images">
-        <a href="" class="journal-image">
-            <figure>
-                <img decoding=“async” src="<?php echo get_template_directory_uri(); ?>/assets/img/journal-living.jpg" alt="美しい内装の芸術性">
-                <figcaption>美しい内装の芸術性</figcaption>
-            </figure>
-        </a>
+        <?php
+        $args = array(
+            'post_type' => 'journal',
+            'posts_per_page' => 3,
+            'order' => 'ASC',
+        );
+        $the_query = new WP_Query($args);
+        if ($the_query->have_posts()) :
+        ?>
 
-        <a href="" class="journal-image">
-            <figure>
-                <img decoding=“async” src="<?php echo get_template_directory_uri(); ?>/assets/img/journal-house.jpg" alt="豪華で高貴な魅力溢れる家のリフォーム">
-                <figcaption>豪華で高貴な魅力溢れる家のリフォーム</figcaption>
-            </figure>
-        </a>
+            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
 
-        <a href="" class="journal-image">
-            <figure>
-                <img decoding=“async” src="<?php echo get_template_directory_uri(); ?>/assets/img/journal-toilet.jpg" alt="快適さと美しさを追求したトイレの豪華なリフォーム">
-                <figcaption>快適さと美しさを追求したトイレの豪華なリフォーム</figcaption>
-            </figure>
-        </a>
 
+
+                <a href="<?php the_permalink() ?>" class="journal-image">
+                    <figure>
+                        <img decoding=“async” src="<?php echo CFS()->get("thum"); ?>" alt="">
+                        <figcaption><?php echo CFS()->get("title"); ?></figcaption>
+                    </figure>
+                </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <?php endwhile;; ?>
     </div>
 </section>
+
+<?php endif;
+        wp_reset_postdata()
+?>
+
+
 
 
 <section class="top-questions-wrap">

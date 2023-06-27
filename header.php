@@ -8,7 +8,7 @@
     <title>
         <?php bloginfo('name'); ?>
     </title>
-    <meta name="description" content="ページの説明">
+    <meta name="description" content="あなたのリフォームをお助けします！愛知、岐阜を中心として全国に展開予定！">
     <meta name="format-detection" content="telephone=no">
 
     <!-- ファビコン-->
@@ -51,7 +51,7 @@
                     <button><a href="<?php echo home_url(); ?>">ホーム</a></button>
                     <button><a href="/company">会社一覧</a></button>
                     <button><a href="<?php echo home_url() ?>/#reform-area">施工事例</a></button>
-                    <button><a href="">ジャーナル</a></button>
+                    <button><a href="/journal">ジャーナル</a></button>
                     <button><a href="/faq">よくある質問</a></button>
 
 
@@ -73,8 +73,55 @@
 
             </div>
 
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <!--ここからメニュー-->
+                <div class="menu-content">
+                    <ul>
+                        <li>
+                            <a href="<?php echo home_url(); ?>">ホーム</a>
+                        </li>
+                        <li>
+                            <a href="/company">会社一覧</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo home_url() ?>/#reform-area">施工事例</a>
+                        </li>
+                        <li>
+                            <a href="/journal">ジャーナル</a>
+                        </li>
+                        <li>
+                            <a href="/faq">よくある質問</a>
+                        </li>
 
 
+                    </ul>
+                    <address class="header-address">
+                        <button>
+                            <a href=""> <span>営業時間 9:00～18:00</span>
+                                <div class="header-nav-tel">0120-523-233</div>
+                            </a>
+
+                        </button>
+                        <button>
+                            <a href="/contact">
+                                <div>お問い合わせ</div>
+                            </a>
+                        </button>
+
+                    </address>
+                    <ul>
+                        <li>
+                            <a href="/policy">プライバシーポリシー</a>
+                        </li>
+
+                    </ul>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ASBY不動産.svg" alt="">
+
+                </div>
+                <!--ここまでメニュー-->
+            </div>
         </div>
 
         <div class="sticky-arrow">

@@ -4,6 +4,23 @@ html {
 
 }
 
+@media screen and (max-width: 1200px) {
+    html{
+        font-size: 50%;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 50%;
+    }
+}
+@media screen and (min-width: 1440px) {
+    html{
+        font-size: 80%;
+    }
+
+}
 a{
     display: block;
 }

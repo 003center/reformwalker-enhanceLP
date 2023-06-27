@@ -7,7 +7,6 @@ overflow: hidden;
 margin-top:-120px;
 
 }
-
 .hero-image::before {
     content: "";
     background-image: url(../img/hero-image.jpeg);
@@ -65,7 +64,15 @@ background-color: rgb(255, 255, 255);
 border:2px solid #337AA6;
 transition: all .5s ease-out;
 }
-
+@media screen and (max-width: 768px) {
+    .hero-image-txt h1 {
+        font-size: 3.8rem;
+    }
+.hero-image-txt {
+    right: -24%;
+    padding: 4% 24% 4% 5%;
+}
+}
 
 /*****************ジャーナル*****************************************/
 .journal {
@@ -119,9 +126,21 @@ transition: all .2s ease-out;
     transition: all .6s ease;
 }
 
+@media screen and (max-width: 768px) {
 
-
-
+.journal-images {
+    grid-template-columns: 1fr;
+}
+.journal-image figcaption {
+    font-size: 2.6rem;
+}
+.journal {
+    padding: 20% 0 0 0;
+}
+.journal-images img {
+    padding: 3%;
+}
+}
 /*****************みんなの疑問*****************************************/
 .top-questions-wrap {
     padding:3% 0 0 0;
@@ -172,12 +191,33 @@ left:-20px;
 bottom:6px;
 }
 .top-question a:hover::before{
-    transform: rotate(360deg);
+    transform: rotate(5deg);
     transform-origin:50% -0%;
-    transition: all 1s ease-in;
+    transition: all .1s ease-in;
 }
+@media screen and (max-width: 768px) {
 
-
+.top-question button {
+    width: 97%;
+}
+}
+@media screen and (max-width: 768px) {
+    .top-questions-wrap {
+        padding: 10% 0 0 0;
+    }
+    .top-questions {
+        grid-template-columns: 1fr;
+        gap: 35px 25px;
+        width: 90%;
+    }
+    .top-question a {
+        padding: 0 0 0 10%;
+    }
+    .top-question button {
+        width: 96%;
+    }
+    
+}
 
 
 /*****************リフォーム可能箇所*****************************************/
@@ -235,9 +275,24 @@ bottom:6px;
     .reform-area-p p{
     float: right;
 }    
+@media screen and (max-width: 768px) {
+    .reform-areas-wrap {
+        padding: 20% 0 0 0;
+    }
+    .reform-areas {
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+    .reform-area-p {
+        width: 90%;
+    }
+    .reform-area-p p {
+        float: none;
+    }
+}
 
 
-/*****************リフォーム可能箇所*****************************************/
+/*****************リフォームの流れ*****************************************/
 .reform-step-wrap {
     padding:5% 0 0 0;
     font-family:     'Klee One', cursive;
@@ -312,7 +367,38 @@ bottom:6px;
     right:10%;
 
 }
-
+@media screen and (max-width: 768px) {
+    .reform-step-wrap {
+        padding: 20% 0 0 0;
+    }
+    .reform-step {
+        width: 80%;
+        height: 125px;
+        position: unset;
+        margin:3% 0;
+    }
+    .reform-steps {
+        height: 65dvh;
+        flex-direction: column;
+        justify-content: center;
+    align-items: center;
+    }
+    .reform-step:nth-child(2) {
+        transform: translate(0, 0);
+        height:170px;
+    }
+    .reform-steps::before {
+        height: 65dvh;
+    }
+    .reform-step p {
+        font-size: 1.6rem;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .reform-step:nth-child(2) {
+        height: 230px;
+    }
+}
 
 /*****************リフォームするならリフォームウォーカーで*****************************************/
 .reformwalker-ad {
@@ -320,7 +406,11 @@ bottom:6px;
     padding:5% 0 0 0 ;
 }
 
-
+@media screen and (max-width: 768px) {
+    .reformwalker-ad {
+        padding: 15% 0 0 0;
+    }
+}
 
 /*****************みんなの疑問の答え*****************************************/
 summary::-webkit-details-marker {
@@ -418,8 +508,30 @@ background-blend-mode:lighten;
     text-decoration: underline;
     color: red;
 }
+@media screen and (max-width: 1200px) {
 
-
+.top-answers {
+    width: 80%;
+}
+}
+@media screen and (max-width: 768px) {
+    .top-answers-wrap {
+        margin: 15% 0 0 0;
+    }
+    .top-answers {
+        width: 90%;
+        gap: 50px 0px;
+    }
+    .top-answer-detail p {
+        font-size: 1.4rem;
+    }
+    .top-answer-detail a {
+        padding: 2% 0;
+    }
+    summary {
+        padding: 3% 10%;
+    }
+}
 
 /*****************私たちの強み*****************************************/
 .strong-point-wrap{
@@ -448,7 +560,11 @@ background-blend-mode:lighten;
 
 }
 
-
+@media screen and (max-width: 768px) {
+    .strong-point-wrap {
+        padding: 20% 0 0 0;
+    }
+}
 /*****************ループスライド*****************************************/
 .loopslide-wrap {
     padding: 6% 0;

@@ -2,3 +2,10 @@
     width:70%;
     margin:8% auto;
 }
+
+@media screen and (max-width: 768px) {
+    .single-journal-wrap {
+        width:100%;
+    }
+    
+}

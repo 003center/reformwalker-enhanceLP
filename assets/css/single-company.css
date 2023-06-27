@@ -66,7 +66,7 @@ font-size: 1.4rem;
 
 .company-message-txt span {
     float: right;
-    padding: 0 10% 0 0;
+    padding: 10% 10% 0 0;
 }
 
 .company-construction h2 {
@@ -141,4 +141,15 @@ td, th {
     }
     .google-map iframe {
         width:100%;
+    }
+
+    @media screen and (max-width: 768px) {
+        .company-wrap {
+            width: 90%;
+        }
+        .company-message-grid {
+display: block;        }
+.company-message-txt {
+    font-size: 1.6rem;
+}
     }
