@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('construction'); ?>
 <?php
 $args = array(
     'post_type' => 'construction',
@@ -13,7 +13,7 @@ if ($the_query->have_posts()) :
 
             <?php if (CFS()->get("basyo") == "お風呂") : ?>
                 <figure>
-                    <img decoding="async" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-bath.jpg " alt="">
+                    <img decoding="async" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-bath.jpg.webp " alt="">
                     <figcaption>お風呂リフォーム</figcaption>
                 </figure>
     </section>

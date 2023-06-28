@@ -20,10 +20,13 @@ section.faq-wrap {
 }
 .faq-a {
     background: rgba(203, 203, 203, 0.42);
-    height: 5rem;
+    height: auto;
     display: flex;
 align-items: center;
-padding:0 0 0 3%}
+padding:3%}
+.faq-q {
+    margin: 5% 0 0 0;
+}
 
 @media screen and (max-width: 768px) {
     section.faq-wrap {

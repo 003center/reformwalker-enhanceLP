@@ -1,5 +1,4 @@
-<?php get_header(); ?>
-<section class="policy-wrap">
+<?php get_header('construction'); ?><section class="policy-wrap">
     <h2>プライバシーポリシー</h2>
     <div class="faq-qa">
         <p> 個人情報保護に関する方針

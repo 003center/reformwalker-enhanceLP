@@ -12,7 +12,7 @@ html {
 }
 @media screen and (max-width: 768px) {
     html{
-        font-size: 50%;
+        font-size: 60%;
     }
 }
 @media screen and (min-width: 1440px) {
@@ -28,4 +28,7 @@ a{
 body {
     background-color: #F9FFDF;
     font-family: 'Klee One', cursive;
+}
+img {
+    height:auto;
 }

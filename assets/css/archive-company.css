@@ -51,4 +51,7 @@ a.archive-company-content:hover {
         grid-template-columns: 1fr;
         gap: 5% 5%;
     }
+    .archive-company-wrap {
+        margin: 10% auto 30%;
+    }
 }

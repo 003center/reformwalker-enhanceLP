@@ -87,7 +87,7 @@ position: relative;
 }
 .header-address button:last-child::after{
     content: "";
-    background-image: url(../img/メールアイコン.png);
+    background-image: url(../img/メールアイコン.png.webp);
     width:35px;
     height:35px;
     background-size: cover;
@@ -102,7 +102,7 @@ position: relative;
 }
 .sticky-arrow a::before{
     content: "";
-    background-image: url(../img/丸枠付き三角.png);
+    background-image: url(../img/丸枠付き三角.png.webp);
     width: 50px;
     height: 50px;
     background-size: cover;
@@ -248,6 +248,10 @@ position: relative;
 .menu-content .header-address button:first-child {
     padding: 5% 0;
 }
+.sticky-arrow a::before{
+    bottom: 13%;
+}
+
 }
 
 @media screen and (min-width: 1400px) {

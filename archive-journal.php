@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('journal'); ?>
 <div class="archive-journal-wrap">
     <div class="archive-journal-top">
         <?php

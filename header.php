@@ -6,20 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?php bloginfo('name'); ?>
+        リフォームウォーカー
     </title>
-    <meta name="description" content="あなたのリフォームをお助けします！愛知、岐阜を中心として全国に展開予定！">
+    <meta name="description" content="リフォームウォーカーはあなたのリフォームに最適な業者を紹介します！愛知、岐阜を中心に展開しております！全国展開も予定しております。話を聞くだけでも大歓迎です！お気軽にご相談ください。">
     <meta name="format-detection" content="telephone=no">
 
-    <!-- ファビコン-->
-    <link rel="icon" href="favicon.ico" />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-
-    <!--OGP -->
-    <!-- SNSなどでシェアされたときの表示-->
-    <meta property="og:site_name" content="サイト名" />
-    <!--ページURLを絶対パスで設定-->
-    <meta property="og:url" content="URL" />
 
     <!-- フォント-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -99,7 +90,7 @@
                     </ul>
                     <address class="header-address">
                         <button>
-                            <a href=""> <span>営業時間 9:00～18:00</span>
+                            <a href="tel:0120-523-233"> <span>営業時間 9:00～18:00</span>
                                 <div class="header-nav-tel">0120-523-233</div>
                             </a>
 

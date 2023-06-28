@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('construction'); ?>
 <?php
 $args = array(
     'post_type' => 'construction',

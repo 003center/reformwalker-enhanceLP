@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('archive-company'); ?>
 <div class="archive-company-hero">
 
 </div>

@@ -1,5 +1,4 @@
-<?php get_header(); ?>
-<div class="thanks-wrap">
+<?php get_header('contact'); ?><div class="thanks-wrap">
     <h2>お問い合わせありがとうございます。
     </h2>
     <p>ご連絡を受け付けました。担当者から返信いたしますので、しばらくお待ちください。

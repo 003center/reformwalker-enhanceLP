@@ -1,12 +1,14 @@
 <footer>
+    <!--
     <div class="footer-top">
         <button class="footer-top-cobtn"><a href="<?php echo home_url(); ?>/company">会社一覧はこちらから　＞</a></button>
 
         <p>お問い合わせはこちらから！</p>
         <address class="footer-top-address">
             <button>
-                <span>営業時間 9:00～18:00</span>
-                <div class="footer-top-tel">0120-523-233</div>
+                <a href="tel:0120-523-233"> <span>営業時間 9:00～18:00</span>
+                    <div class="footer-top-tel">0120-523-233</div>
+                </a>
 
             </button>
             <button>
@@ -17,6 +19,16 @@
 
 
         </address>
+    </div>
+-->
+    <div class="footer-sp">
+        <address>
+            <a href="tel:0120-523-233"><span>営業時間 9:00～18:00</span>0120-523-233</a>
+            <a href="/contact">
+                <div>お問い合わせ</div>
+            </a>
+        </address>
+
     </div>
 
 
@@ -37,7 +49,7 @@
 
                 <address>
                     <button class="footer-bottom-tel">
-                        <a><span>お問い合わせはこちらから</span>
+                        <a href=""><span>お問い合わせはこちらから</span>
                             <div>0120-523-233</div>
                         </a>
                     </button>
