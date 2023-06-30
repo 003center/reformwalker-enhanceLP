@@ -1,3 +1,7 @@
+.pre {
+    width:50%;
+    margin:0 auto;
+}
 /*****************ヒーローイメージ*****************************************/
 .hero-image {
 width:100%;
@@ -66,7 +70,7 @@ transition: all .5s ease-out;
 }
 @media screen and (max-width: 768px) {
     .hero-image-txt h1 {
-        font-size: 3.8rem;
+        font-size: 3.6rem;
     }
 .hero-image-txt {
     right: -24%;
@@ -118,7 +122,7 @@ transition: all .2s ease-out;
 .journal-image figcaption {
     color: rgb(0, 0, 0);
     font-size: 1.6rem;
-    z-index: 999;
+    z-index: 1;
     position: relative;}
 .journal-image:hover img{
     border:5px solid white;
@@ -191,19 +195,7 @@ display: block;
     height: 80px;
 }
 .top-question a {
-    padding:0 0 0 8%;
-}
-.top-question a::before {
-    content: "";
-    background-image: url(../img/ASBY不動産.svg);
-width:50px;
-height:50px;
-display: inline-block;
-background-size: cover;
-vertical-align: middle;
-position: absolute;
-left:-20px;
-bottom:6px;
+    padding:0 0 0 2%;
 }
 .top-question a:hover::before{
     transform: rotate(5deg);
@@ -226,14 +218,13 @@ bottom:6px;
         width: 90%;
         margin:40% auto 0;
     }
-    .top-question a {
-        padding: 0 0 0 10%;
-    }
     .top-question button {
         width: 96%;
         height:70px;
     }
-    
+    .top-question {
+        margin: 0 0 0 0%;
+    }
 }
 
 
@@ -337,7 +328,7 @@ bottom:6px;
 }
 .reform-steps::before {
     content: "";
-    background-image: url(../img/reform-step.jpg.webp);
+    background-image: url(../img/reform-step.jpg);
     width:100%;
     height:50dvh;
     display: inline-block;
@@ -435,10 +426,13 @@ summary::-webkit-details-marker {
     display: none;
   }
   summary {
+    list-style: none;
+}
+ .top-answers-wrap summary {
     display: block;
     list-style: none;
   }
-  summary {
+ .top-answers-wrap summary {
     cursor: pointer;
     padding: 3% 7%;
     background-color: #337AA6;
@@ -447,10 +441,10 @@ summary::-webkit-details-marker {
     color: white;
 
   }
-  details {
+  .top-answers-wrap details {
     position: relative;
   }
-  details[open] .top-answer-detail{
+  .top-answers-wrap details[open] .top-answer-detail{
     animation: fadeIn .8s ease;
   }
   @keyframes fadeIn {
@@ -463,20 +457,7 @@ summary::-webkit-details-marker {
       transform: none;
     }
   }
-  summary::before {
-    content: "";
-    background-image: url(../img/point.svg);
-width:55px;
-height:50px;
-display: inline-block;
-background-size: cover;
-vertical-align: middle;
-position: absolute;
-top:0px;
-left:0;
-
-  }
-  summary::after {
+  .top-answers-wrap summary::after {
     content: "";
     background-image: url(../img/矢印アイコン\　下4.svg);
     width: 20px;
@@ -485,29 +466,22 @@ left:0;
     background-size: cover;
     vertical-align: middle;
     position: absolute;
-    top: 30px;
+    top: 50%;
     right: 5%;
     transform: translate(0, -50%);
     transition: all .5s;
 
 }
-details[open] summary::after{
+.top-answers-wrap details[open] summary::after{
     transform: rotate(180deg);
-    top:20px;
+    top:8%;
     transition: all .5s;
 }
-  .top-answers-wrap {
+section.top-answers-wrap {
+    margin: 10% auto;
     background-color: white;
-    padding:5% 0 0 0;
-    background-image: url(../img/ASBY不動産.svg);
-    background-color:rgba(255,255,255,0.8);
-background-blend-mode:lighten;
-    background-repeat: repeat;
-    background-size: 100px;
-    font-family:     'Klee One', cursive;
-    margin:5% 0 ;
-  }
-
+    padding: 5% 0;
+}
   .top-answers {
     width:50%;
     margin:0 auto;
@@ -517,9 +491,21 @@ background-blend-mode:lighten;
     background: #d9d9d9;
     color: black;
     padding: 5% 5% 10%;
-    font-size: 1.4rem;
+    font-size: 2rem;
+
 }
-.top-answer-detail a{
+.top-answers-wrap .top-answer-detail::before {
+    content: "";
+    background-image: url(../img/point.svg);
+width:55px;
+height:50px;
+display: inline-block;
+background-size: cover;
+vertical-align: middle;
+
+  }
+
+.top-answers-wrap .top-answer-detail a{
     padding:5% 0;
     float: right;
     text-decoration: underline;
@@ -541,13 +527,16 @@ background-blend-mode:lighten;
         gap: 50px 0px;
     }
     .top-answer-detail p {
-        font-size: 1.4rem;
+        font-size: 2rem;
     }
     .top-answer-detail a {
         padding: 2% 0;
     }
-    summary {
-        padding: 1% 10% 0 18%;
+    .top-answers-wrap summary {
+        padding: 5% 10% 5% 3%;
+    }
+    .top-answer-detail {
+        padding: 5% 5% 30% 5%;
     }
 }
 
@@ -573,14 +562,30 @@ background-blend-mode:lighten;
     text-align: center;
     padding: 2% 0 0 0;
 }
+.strong-point  {
+    display: flex;
+    justify-content: center;
+}
 .strong-point:last-child {
     padding: 3% 0 0 0;
 
 }
+.strong-point img:first-child {
+    display: block;
+}.strong-point img:last-child {
+    display: none;
+}
+
 
 @media screen and (max-width: 768px) {
     .strong-point-wrap {
         padding: 20% 0 0 0;
+    }
+    .strong-point img:first-child {
+        display: none;
+    }
+    .strong-point img:last-child {
+        display: block;
     }
 }
 /*****************ループスライド*****************************************/

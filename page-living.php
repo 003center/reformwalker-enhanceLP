@@ -12,7 +12,7 @@
 
         <?php if (CFS()->get("basyo") == "リビング") : ?>
             <figure>
-                <img decoding="async" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-living.jpg.webp " alt="">
+                <img decoding="async" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-living.jpg " alt="">
                 <figcaption>リビングリフォーム</figcaption>
             </figure>
 </section>

@@ -12,7 +12,7 @@
 
         <?php if (CFS()->get("basyo") == "玄関") : ?>
             <figure>
-                <img decoding="async" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-genkan.jpg.webp " alt="">
+                <img decoding="async" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-genkan.jpg " alt="">
                 <figcaption>玄関リフォーム</figcaption>
             </figure>
 </section>

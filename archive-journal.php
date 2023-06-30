@@ -58,6 +58,12 @@
     </div>
 
 </div>
+<div class="navigation">
+    <?php if (function_exists('wp_pagenavi')) : ?>
+        <?php wp_pagenavi(array('query' => $the_query)); ?>
+    <?php else : ?>
+    <?php endif; ?>
+</div>
 
 <?php endif;
         wp_reset_postdata()

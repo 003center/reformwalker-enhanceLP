@@ -13,25 +13,90 @@ section.faq-wrap {
 .faq-qa {
     font-size: 1.6rem;
     padding: 0 5%;
+    cursor: pointer;
 }
 .faq-qa span {
     font-size:3rem;
     color:red;
 }
+.faq-qa span:last-child {
+    margin:0 0 0 auto;
+    float:right;
+    padding:0 20% 0 0;
+}
+.faq-qa span:last-child div{
+    transform: rotateZ(45deg);
+    transition: all .3s;
+
+}
 .faq-a {
     background: rgba(203, 203, 203, 0.42);
     height: auto;
-    display: flex;
-align-items: center;
 padding:3%}
 .faq-q {
     margin: 5% 0 0 0;
+    border: 1px dashed black;
 }
+
+.faq-wrap details[open] .faq-a{
+    animation: fadeIn .8s ease;
+  }
+  .faq-wrap details[open] .faq-q span div{
+    transform: rotateZ(0deg);
+transition: all .3s;
+
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; /* 透明 */
+      transform: translateY(-10px); /* 上から表示 */
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
 
 @media screen and (max-width: 768px) {
     section.faq-wrap {
         width: 95%;
 
     }
+    .faq-q{
+        display: flex;
+        margin:20% 0 0 0;
+    }
+    .faq-qa span:last-child {
+        float:none;
+        padding:0 0% 0 0;
+    }
     
 }
+
+
+
+.registration-wrap {
+    width: 70%;
+    margin: 20% auto;
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 5%;
+    font-size: 2rem;
+}
+.registration-wrap a{
+    text-decoration: underline;
+    padding:5% 0 0 0 ;
+    color:red;
+    
+}
+
+.registration-wrap h2 {
+    text-align: center;
+    padding: 5% 0;
+}
+    @media  screen and (max-width:768px){
+    .registration-wrap{
+        width:95%;
+    }
+}
+    

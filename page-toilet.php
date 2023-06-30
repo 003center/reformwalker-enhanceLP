@@ -12,7 +12,7 @@
 
         <?php if (CFS()->get("basyo") == "トイレ") : ?>
             <figure>
-                <img decoding="async" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-toilet.jpg.webp " alt="">
+                <img decoding="async" src="<?php echo get_template_directory_uri(); ?>/assets/img/reform-toilet.jpg " alt="">
                 <figcaption>トイレリフォーム</figcaption>
             </figure>
 </section>

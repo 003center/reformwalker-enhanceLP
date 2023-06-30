@@ -16,7 +16,7 @@ $the_query = new WP_Query($args);
         <?php if ($the_query->have_posts()) :
             while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
-                <a href="<?php the_permalink(); ?>" class="archive-company-content">
+                <a href="<?php /*the_permalink(); */ ?>" class="archive-company-content">
                     <figure>
                         <img src="<?php echo CFS()->get("top-img"); ?>" alt="">
                     </figure>
@@ -33,6 +33,8 @@ $the_query = new WP_Query($args);
 
             <?php endwhile;; ?>
     </div>
+
+    <div class="kousinyotei">随時更新予定！</div>
 </div>
 
 <?php endif;

@@ -19,7 +19,7 @@ function add_my_files()
     wp_enqueue_style('policy.css', get_theme_file_uri('/assets/css/policy.css'));
     wp_enqueue_style('thanks.css', get_theme_file_uri('/assets/css/thanks.css'));
     wp_enqueue_style('single-journal.css', get_theme_file_uri('/assets/css/single-journal.css'));
-    wp_enqueue_style('archive-journal.css', get_theme_file_uri('/assets/css/archive-journal.css'));
+    wp_enqueue_style('archive-journalwp.css', get_theme_file_uri('/assets/css/archive-journalwp.css'));
 
 
 

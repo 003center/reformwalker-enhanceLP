@@ -83,7 +83,7 @@ padding:1% 0 6% 0 ;}
 .footer-bottom-wrap {
     background-color: #337AA6;
     color:white;
-    margin:15% 0 0 0;
+    margin:45% 0 0 0;
     position: relative;
 }
 .footer-bottom-wrap::before {
@@ -104,16 +104,6 @@ padding:1% 0 6% 0 ;}
     padding: 2% 0 0 0;
     position: relative;
 }
-.footer-bottom::after {
-    content: "";
-    background-image: url(../img/ASBY不動産.svg);
-    width: 300px;
-    height: 300px;
-    display: block;
-    background-size: cover;
-    position: absolute;
-    top: -20%;
-    right: 0%;}
 .footer-bottom-name {
     font-size: 3rem;
 }
@@ -166,6 +156,8 @@ padding:1% 0 6% 0 ;}
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 999;
+    position: relative;
 }
 .footer-bottom-tel {
     width:100%;
@@ -181,6 +173,9 @@ padding:1% 0 6% 0 ;}
     justify-content: center;}
     .footer-sp {
         display: none;
+    }
+    button.footer-bottom-address {
+        width: max-content;
     }
     @media screen and (max-width: 1200px) {
 

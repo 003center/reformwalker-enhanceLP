@@ -23,7 +23,7 @@
 -->
     <div class="footer-sp">
         <address>
-            <a href="tel:0120-523-233"><span>営業時間 9:00～18:00</span>0120-523-233</a>
+            <a href="tel:0120-523-233"><span>営業時間 平日9:00～18:00</span>0120-523-233</a>
             <a href="/contact">
                 <div>お問い合わせ</div>
             </a>
@@ -49,7 +49,7 @@
 
                 <address>
                     <button class="footer-bottom-tel">
-                        <a href=""><span>お問い合わせはこちらから</span>
+                        <a><span>お問い合わせはこちらから</span>
                             <div>0120-523-233</div>
                         </a>
                     </button>
