@@ -434,15 +434,27 @@ summary::-webkit-details-marker {
   }
  .top-answers-wrap summary {
     cursor: pointer;
-    padding: 3% 7%;
-    background-color: #337AA6;
+    padding: 3% 4% 3% 2%;    background-color: #337AA6;
     height: auto;
     font-size: 2.0rem;
     color: white;
 
   }
+  .top-answers-wrap h2{
+    text-align: center;
+    font-size: 4rem;
+  }
+  .top-answers-wrap  h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 5px;
+    background-color: #FF792E;
+    margin: 0 auto;
+}
   .top-answers-wrap details {
     position: relative;
+    margin:5% 0;
   }
   .top-answers-wrap details[open] .top-answer-detail{
     animation: fadeIn .8s ease;
@@ -483,14 +495,18 @@ section.top-answers-wrap {
     padding: 5% 0;
 }
   .top-answers {
+    width:95%;
+    margin:1% auto;
+    display: flex;
+  }
+  .top-answer-left,.top-answer-right {
     width:50%;
-    margin:0 auto;
-    display: grid; 
-    gap: 30px 0px;   }
+    margin:3%;
+  }
 .top-answer-detail {
     background: #d9d9d9;
     color: black;
-    padding: 5% 5% 10%;
+    padding: 5% 5% 20%;
     font-size: 2rem;
 
 }
@@ -514,17 +530,10 @@ vertical-align: middle;
 
 @media screen and (max-width: 1200px) {
 
-.top-answers {
-    width: 80%;
-}
 }
 @media screen and (max-width: 768px) {
     .top-answers-wrap {
         margin: 15% 0 0 0;
-    }
-    .top-answers {
-        width: 90%;
-        gap: 50px 0px;
     }
     .top-answer-detail p {
         font-size: 2rem;
@@ -537,6 +546,12 @@ vertical-align: middle;
     }
     .top-answer-detail {
         padding: 5% 5% 30% 5%;
+    }
+    .top-answers {
+        flex-direction: column;
+    }
+    .top-answer-left, .top-answer-right {
+        width: 90%;
     }
 }
 
