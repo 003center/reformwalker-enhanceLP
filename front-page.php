@@ -142,19 +142,19 @@
     <div class="reform-steps">
         <div class="reform-step">
             <h3>1.お問い合わせ</h3>
-            <p>お電話もしくはお問い合わせフォームよりお問い合わせください。</p>
+            <p class="not-flex">お電話もしくは<a href="/contact">お問い合わせフォーム</a> よりお問い合わせください。</p>
         </div>
         <div class="reform-step">
             <h3>2.リフォーム業者を紹介</h3>
             <p>弊社よりお電話もしくはメールにて業者をご紹介させていただきます。<br>
                 ご希望の業者がいらっしゃる場合は、直接業者よりご連絡させていただきます。<br>
                 ご希望がない場合は、お客様のお近くの最適な業者を紹介させていただきます。<br>
-                遠慮なく比較、検討し最適な業者をお選びただくことができます。</p>
+                遠慮なく比較、検討し最適な業者をお選びただくことができます。<img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/4058_color.png" alt="リフォーム業者紹介"></p>
         </div>
 
         <div class="reform-step">
             <h3>3.契約・施工</h3>
-            <p>ご紹介後、リフォーム業者と打ち合わせののちに施工となります、（お支払い条件や価格等はリフォーム業者とお客様との契約となります。）</p>
+            <p>ご紹介後、リフォーム業者と打ち合わせののちに施工となります。<br>（お支払い条件や価格等はリフォーム業者とお客様との契約となります。）<img decoding=“async” loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/17053_color.png" alt="契約・施工"></p>
         </div>
 
     </div>

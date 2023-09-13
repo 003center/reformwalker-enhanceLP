@@ -417,95 +417,63 @@ p.feature-no-wrap {
 }
 .reform-steps {
     width:100%;
-    height:50dvh;
+    height:auto;
     position: relative;
     margin: 2% 0 0 0;
     display: flex;
     justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding:0 5%;
 }
-.reform-steps::before {
-    content: "";
-    background-image: url(../img/reform-step.jpg);
-    width:100%;
-    height:50dvh;
-    display: inline-block;
-    background-size: cover;
-    vertical-align: middle;
-    position: absolute;
-    top:0;
-    left:0;
-    z-index: -1;
-    background-position:top 60% left 0;
-    transform: scale(-1, 1);
-    filter: brightness(0.8);
-}
-.reform-step {
-    width: 25%;
+.reform-step{
+    width: 80%;
     border: 2px solid white;
-    background-color: rgba(139, 139, 139, 0.7);
+    background-color: rgb(87 155 165);
     color:white;
-    text-align: center;
-    padding:1% 2%;
+    padding:2%;
     height:auto;
-    position: absolute;
+    margin: 0 auto ;
+}
+.reform-step a{
+    text-decoration: underline;
+}
+.reform-step a:hover{
+    color:rgb(0, 0, 0);
+}
+
+.reform-step img {
+    width:30%;
+    margin:0 0 0 auto;
 }
 .reform-step h3{
     font-size: 3rem;
 }
-.reform-step p{
+.reform-step p {
     text-align: left;
     font-size: 1.6rem;
-    padding: 7% 0 0 0;
-}
-.reform-step:first-child {
-    top:10%;
-    left:5%;
-
-}
-.reform-step:nth-child(2) {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width:30%;
-}
-.reform-step:last-child {
-    bottom:10%;
-    right:5%;
-
+    display: flex;
+    padding:3% 0;
+    flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
-    .reform-step-wrap {
-        padding: 20% 0 0 0;
+    .reform-steps {
+        padding:0 2%;
     }
-    .reform-step {
-        width: 90%;
-        position: unset;
-        margin:3% 0;
+    .reform-step{
+        width:100%;
+    }
+    .reform-step-wrap {
+        padding: 20% 0 15% 0;
     }
     .reform-step-wrap h2 {
         font-size: 3rem;
     }
-    .reform-steps {
-        height: 80dvh;
-        flex-direction: column;
-        justify-content: center;
-    align-items: center;
-    }
-    .reform-step:nth-child(2) {
-        transform: translate(0, 0);
-    }
-    .reform-steps::before {
-        height: 80dvh;
-    }
     .reform-step p {
         font-size: 1.6rem;
     }
-    .reform-step:nth-child(2) {
-        width: 90%;
-    }
-}
-@media screen and (min-width: 1400px) {
-    .reform-step:nth-child(2) {
+    .reform-step p:not(.not-flex) {
+        flex-direction: column-reverse;
     }
 }
 
@@ -1751,6 +1719,7 @@ display: block;        }
     #cf-tbl table tr td{
     width: 100%;
     padding: 3% 5% 8% 5%;
+    height:auto;
     }
     
     #cf-tbl table tr td{
