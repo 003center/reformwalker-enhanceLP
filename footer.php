@@ -37,7 +37,7 @@
 
                 <address>
                     <div class="footer-bottom-tel">
-                        <a><span>お電話はこちらから</span>
+                        <a><span>お問い合わせはこちらから</span>
                             <div>0120-523-233</div>
                         </a>
                     </div>
