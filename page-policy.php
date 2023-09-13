@@ -1,6 +1,15 @@
-<?php get_header('construction'); ?><section class="policy-wrap">
+<?php get_header(); ?>
+<div class="archive-company-wrap ">
+    <p class="pan-list">
+        <a href="<?php echo home_url(); ?>">ホーム</a>
+        > <span>プライバシーポリシー・免責事項</span>
+
+    </p>
+</div>
+
+<section class="policy-wrap">
     <h2>プライバシーポリシー</h2>
-    <div class="faq-qa">
+    <div class="">
         <p> 個人情報保護に関する方針
         </p>
         <p> リフォームウォーカーは、個人情報の取得、利用及び管理について、細心の注意を持って取り扱う事をお約束いたします。
@@ -32,8 +41,11 @@
         <p> TEL：0120-523-233 （リフォームウォーカー )
         </p>
     </div>
+    <div class="responsibility">
+        <h2>免責事項</h2>
+        当サイトはお客様と施工業者を仲介するサイトであり、お客様と業者間のトラブルに関していかなる場合も一切の責任を負い兼ねます。<br>また、当サイトの利用により生じた損失や損害については、一切責任を負いません。
 
-
+    </div>
 </section>
 
 <?php get_footer(); ?>

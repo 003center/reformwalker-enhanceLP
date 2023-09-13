@@ -1,14 +1,17 @@
-<?php get_header('contact'); ?>
+<?php get_header() ?>
 
-<head>
+<div class="archive-company-wrap ">
+    <p class="pan-list">
+        <a href="<?php echo home_url(); ?>">ホーム</a>
+        > <span>お問い合わせ</span>
 
-    <meta name="description" content="contact">
-
-</head>
-<div class="contact-wrap">
-    <h2>お問い合わせ</h2>
-    <?php echo do_shortcode('[contact-form-7 id="40" title="コンタクトフォーム 1"]'); ?>
-
+    </p>
 </div>
 
-<?php get_footer(); ?>
+<div class="contact-wrap">
+    <h2>お問い合わせ</h2>
+    <?php echo do_shortcode('
+[contact-form-7 id="40" title="コンタクトフォーム 1"]'); ?>
+
+</div>
+<?php get_footer() ?>

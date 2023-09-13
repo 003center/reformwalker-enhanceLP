@@ -26,8 +26,10 @@ a{
 }
 
 body {
-    background-color: #F9FFDF;
-    font-family: 'Klee One', cursive;
+    background-color: #fefff9;
+    font-family: Noto Sans JP;
+        max-width: 1980px;
+    margin: 0 auto;
 }
 img {
     height:auto;

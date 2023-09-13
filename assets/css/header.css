@@ -1,118 +1,186 @@
-header {
-    position:relative;
-    z-index: 999;
-}
-.header-top {
-    display: flex;
-    background-color: rgba(255, 255, 255, 1);
-    font-size: 1.6rem;
-    padding: 1.5% 0 1% 0;
-    align-items: flex-end;
-}
-.header-name {
-    font-size: 3rem;
-    padding: 0 0 0 8%;
-    font-family: 'Zen Maru Gothic', sans-serif;
+.menu-item-logo {
+    width: 40%;
+    float: left;
     position: relative;
-    width:50%;
+    z-index: 20;
 }
-.header-name a{
-    width:60%;
-    display: flex;
+.menu-item-logo img {
+    border-radius:0px;
+    margin:0 0 0 0px;
+    border-top-left-radius: 0;
+    width:100%;
 }
-
-.header-nav {
+address.header-address {
+    float: right;
     display: flex;
-    background-color: white;
-    margin: 0 auto;
+    align-items: center;
+    width:40%;
+    justify-content: space-evenly;
+    color:white;
     text-align: center;
-    justify-content: center;
-    padding: 1% 0;
+    margin:2% 0 0 0;
     font-size: 1.6rem;
-}.header-nav a {
-    font-family: 'Klee One', cursive;
-    display: block;
-    width: 150px;
-    text-align: center;
     position: relative;
-    display: inline-block;
-    text-decoration: none;
-
+    z-index: 10;
 }
-.header-nav a::after {
+.header-address-button {
+    position: relative;
+}
+.header-address-button a::after {
     position: absolute;
-    bottom: -3px;
     left: 0;
     content: '';
     width: 100%;
-    height: 1px;
-    background: #337AA6;
+    height: 2px;
+    background: #ffffff;
+    bottom: -1px;
     transform: scale(0, 1);
-    transform-origin: center top;
-    transition: transform .3s;
-  }
-  .header-nav  a:hover::after {
-    transform: scale(1, 1);
-  }
-.header-address span {
+    transform-origin: center top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
+    transition: transform 0.3s;   /*変形の時間*/
+    }
+    
+    .header-address-button a:hover::after {
+    transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
+    }
+
+    header#header-top {
+        margin: 0 0 15% 0;
+    }
+
+.header-tel-button {
+    font-size: 2rem;
+}
+.header-tel-button span {
     font-size: 1rem;
 }
-.header-nav-tel {
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: 'Zen Maru Gothic', sans-serif;
+.header-tel-last {
+    font-size:1rem;
+}
 
+.clear {
+    clear:both;
 }
-.header-address {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 0 0 3%;
-    gap:3px;
-    margin:0 0 0 auto;
-    width: 300px;
-    text-align: center;
-}
-.header-name-address {
+h1.hero-txt {
     display: flex;
-    margin: 0 0 0 auto;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    font-size:1.6rem;
+    color: white;
+    text-shadow: 1.5px 1.5px 0 #000, -1.5px -1.5px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, 0px 1px 0 #000, 0-1px 0 #000, -1px 0 0 #000, 1px 0 0 #000;
 }
-.header-address button {
+    .hero-txt span {
+        background:linear-gradient(transparent 60%, #c8ff00 90%);
+        color: aqua;
 }
-.header-address button:first-child{
-    line-height: 1.5rem;
-    background-color:rgb(255, 255, 255);
-    border:#337AA6 solid 3px;
-    padding:10% 0;
+.hero-txt figure {
     width:100%;
+    margin:-10% 0 0 0;
+}
+ .hero-txt p{
+    width:fit-content;
+    margin:5% 0 0 0;
+    padding:4%;
+    border:2px solid white;
+    background-color:#ffffffe0;
+    font-size:4rem;
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;
 }
 
-.header-address button:last-child{
-    width:100%;
-    background-color:#337AA6;
-color:white;
-position: relative;
+.hero-contact {
+    width: 33%;
+    min-width: 300px;
+    margin: 6% auto 10%;
+    position: relative;
 }
-.header-address button:last-child a{
-    padding:25% 0 0 0;
-    z-index: 999;
-    position: inherit;
-}
-.header-address button:last-child::after{
-    content: "";
-    background-image: url(../img/メールアイコン.png.webp);
-    width:35px;
-    height:35px;
+.hero-contact:after {
+    content: '';
+    display: inline-block;
+    width: 115px;
+    height: 105px;
+    background-image: url(../img/Group\ 2.png);
     background-size: cover;
     vertical-align: middle;
     position: absolute;
-    left: 50%;
-    bottom: 50%;
-    transform: translate(-50%,20%);
+    bottom: 60%;
+    left: 95%;
 }
+.hero-contact:hover {
+    opacity: 0.9;
+}
+.menu-content {
+    width: 100%;
+    background-color: #53b9ff;
+}
+nav.menu-item-all {
+    color: white;
+    font-size: 1.6rem;
+    padding: 20% 10% 5% 10%;
+    text-align: center;
+    display: inline;
+}
+
+.menu-item-all a{
+    position: relative;
+    border:1px solid white;
+    padding:10% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+.menu-item-all a:hover{
+    background-color: white;
+    color:#64bbf7;
+
+}
+
+.menu-item-all ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 3%;
+}
+
+.menu-item-all ul li{
+    width:calc(100%/6);
+}
+
+
+.hero-itiran {
+    position: relative;
+
+}
+.hero-itiran:after {
+    content: '';
+    display: inline-block;
+    width: 400px;
+    height: 70px;
+    background-image: url(../img/Group\ 3.png);
+    background-size: cover;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 100%;
+    left: -15%;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.hero-itiran:hover:after {
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+
+
+
+
+
+
 .sticky-arrow {
     height: 0;
-}
+    position: sticky;
+    z-index: 100000;}
 .sticky-arrow a::before{
     content: "";
     background-image: url(../img/丸枠付き三角.png.webp);
@@ -124,203 +192,65 @@ position: relative;
     right: 4%;
     bottom: 10%;
 }
-
-
-.header-top-menu-button {
-    position: relative;
-    display: inline-block;
-  }
-  .header-top-menu-button button a {
-    pointer-events: none;
+.pan-list {
+    display: flex;
+    font-size: 1.4rem;
+    padding:0 0 5% 0;
 }
-  .header-top-menu-item {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: -15%;
-    background-color: #f9f9f9;
-    padding: 10px;
-    width: 200px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
+.pan-list a{
+    margin:0 1.5%;
+}
+.pan-list span {
+    margin: 0 1.5%;
+}
+.pan-list a:hover {
+    text-decoration: underline;
+}
+@media screen and (max-width:1200px) {
+}@media screen and (max-width:900px) {
 
-  .header-top-menu-button:hover .header-top-menu-item {
-    display: block;
-    transition: all .2s;
-  }
-
-.hamburger-menu{
-    display: none;
 }
 
-.header-registration {
-    max-width:250px;
-}
-@media screen and (max-width: 1200px) {
-    .header-top {
-        flex-direction: column;
-        overflow: hidden;
-    }
-    .header-name {
-        margin: 0 auto 0 0;
-        padding:0 0 0 0%;
-    }
-    .header-name a{
-        width:60%;
+@media screen and (max-width:768px) {
+    .menu-item-logo {
+        width: 100%;
     }
     
-    .header-name {
-        width:100%;
+    .sticky-arrow a::before{
+        bottom: 13%;
     }
-}
-@media screen and (max-width: 768px) {
-    .header-name-address {
+    .menu-item-all ul li{
+        width:calc(100%/2);
+    }
+    address.header-address {
+        width: 70%;
+    }
+    .menu-item-logo img {
+        border-radius: 5px;
+    }
+    .hero-txt p {
+        width: 95%;
+    }
+    h2.hero-txt {
+        font-size: 1.4rem;
+    }
+    .hero-contact {
+        margin: 25% auto 3%;
+    }
+    .hero-contact:after {
+        width: 95px;
+        height: 85px;
+        bottom: 95%;
+        left: 80%;
+    }
+    .hero-itiran:after {
         display: none;
     }
-    .header-name::before {
-        width: 25px;
-        height: 25px;
+    .pan-list {
+        padding:20% 0 5% 0;
+    }
+    
 }
-.header-name {
-    padding: 0px 0 0 0;
-}
-.header-name::before {
-    bottom: 10%;
-}
-/*hum*/
-.menu-btn {
-    position: fixed;
-    top: 50px;
-    right: 0px;
-    display: flex;
-    height: 60px;
-    width: 60px;
-    justify-content: center;
-    align-items: center;
-    z-index: 90;
-    background-color: #3584bb;
-    opacity: 0.8;
-}
-.menu-btn span,
-.menu-btn span:before,
-.menu-btn span:after {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 25px;
-    border-radius: 3px;
-    background-color: #ffffff;
-    position: absolute;
-}
-.menu-btn span:before {
-    bottom: 8px;
-}
-.menu-btn span:after {
-    top: 8px;
-}
-#menu-btn-check {
-    display: none;
-}
-.menu-content {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 100%;/*leftの値を変更してメニューを画面外へ*/
-    z-index: 80;
-    background-color: #3584bb;
-    transition: all 0.5s;/*アニメーション設定*/
-}.menu-content ul {
-    padding: 70px 10px 0;
-}
-.menu-content ul li {
-    border-bottom: solid 1px #ffffff;
-    list-style: none;
-}
-.menu-content ul li a {
-    display: block;
-    width: 100%;
-    font-size: 15px;
-    box-sizing: border-box;
-    color:#ffffff;
-    text-decoration: none;
-    padding: 9px 15px 10px 0;
-    position: relative;
-}
-.menu-content ul li a::before {
-    content: "";
-    width: 7px;
-    height: 7px;
-    border-top: solid 2px #ffffff;
-    border-right: solid 2px #ffffff;
-    transform: rotate(45deg);
-    position: absolute;
-    right: 11px;
-    top: 16px;
-}
-#menu-btn-check:checked ~ .menu-content {
-    left: 0;/*メニューを画面内へ*/
-}
-.hamburger-menu{
-    display: block;
-}
-#menu-btn-check:checked ~ .menu-btn span {
-    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
-}
-#menu-btn-check:checked ~ .menu-btn span::before {
-    bottom: 0;
-    transform: rotate(45deg);
-}
-#menu-btn-check:checked ~ .menu-btn span::after {
-    top: 0;
-    transform: rotate(-45deg);
-}
-.menu-content .header-address{
-    margin:8% auto;
-    display: grid;
-    padding: 0 3%;
-    width: 100%;
-}
-.menu-content ul:last-child{
-    padding:0 10px 0;
-}
-.menu-content .header-address button:last-child a {
-    padding: 20% 0 0 0;
-    z-index: 999;
-    position: inherit;
-    border: 2px solid white;
-}
-.menu-content .header-address button:first-child {
-    padding: 5% 0;
-}
-.sticky-arrow a::before{
-    bottom: 13%;
-}
-.hamburger-menu .header-registration {
-    margin: 3% auto;
-}
-.header-nav {
-    display: none;
-}
+@media screen and (min-width:1400px) {
 }
 
-@media screen and (min-width: 1400px) {
-    .header-top {
-        flex-direction: row;
-    }
-    .header-name {
-        margin: 0 auto 0 0;
-    }
-    .header-address {
-        width: 400px;
-    }
-}
-
-.header-top-menu-item a {
-    width: 100%;
-    margin: 3% auto;
-    padding: 3% 0;
-}
-.menseki {
-    background-color: white;
-}
